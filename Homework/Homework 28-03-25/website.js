@@ -27,7 +27,7 @@ app.use((ctx) => {
   } else if (pathname == '/Gender') {
     ctx.response.body = 'Man'
   } else if (pathname == '/School') {
-    ctx.response.body = 'Quemoy University'
+    ctx.response.body = 'Quemoy Uneiversity'
   } else if (pathname == '/ID') {
     ctx.response.body = '111310520'
 }

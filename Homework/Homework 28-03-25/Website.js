@@ -24,7 +24,7 @@ app.use((ctx) => {
     ctx.response.body = '丁瑞祥'
   } else if (pathname == '/Age') {
     ctx.response.body = '18'
-  } else if (pathname == '/Gender') {
+  } else if (pathname == '/Gendeer') {
     ctx.response.body = 'Man'
   } else if (pathname == '/School') {
     ctx.response.body = 'Quemoy University'

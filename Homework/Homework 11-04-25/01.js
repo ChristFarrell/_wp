@@ -11,7 +11,7 @@ const posts = [
 ];
 
 // Run a simple query
-for (const posts of posts)
+for (const post of posts)
   db.query("INSERT INTO posts (title, content) VALUES (?,?)", [posts.title, posts.content]);
 
 // Print out data in table

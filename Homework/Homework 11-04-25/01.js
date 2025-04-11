@@ -1,6 +1,5 @@
 import { DB } from "https://deno.land/x/sqlite/mod.ts";
 
-// Open a database
 const db = new DB("blog.db");
 db.query("CREATE TABLE IF NOT EXISTS posts (id INTEGER PRIMARY KEY AUTOINCREMENT, title TEXT, content TEXT, user TEXT, time DATETIME DEFAULT CURRENT_TIMESTAMP)");
 
@@ -10,13 +9,13 @@ const posts = [
     {title:'Need to eat a lot!', content:'Yes, I need a lot of food intake before the exam.', user: 'By Cava'}
 ];
 
-// Run a simple query
+
 for (const post of posts)
   db.query("INSERT INTO posts (title, content, user) VALUES (?,?,?)", [post.title, post.content, post.user]);
 
-// Print out data in table
+
 for (const [id, title, content, user, time] of db.query("SELECT id, title, content, user, time FROM posts"))
   console.log(id, title, content, user, time);
 
-// Close connection
+
 db.close();

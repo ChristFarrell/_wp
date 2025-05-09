@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sola Gratia School</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Animation -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!--Feather Icons-->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="stylesheet" href="CSS/home.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar Start-->
+    <nav class="navbar">
+      <a href="home.html" class="navbar-logo">
+        <img src="Images/SchoolLogo.png" alt="Logo" style="height: 40px" />
+      </a>
+
+      <div class="navbar-nav">
+        <a href="home.html">Home</a>
+        <a href="ourschool.html">Our School</a>
+        <a href="alumni.html">Our Alumni</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+      <!-- Navigation Bar End-->
+    </nav>
+
+    <!--Hero section-->
+    <section class="hero" id="home" data-aos="fade-up">
+      <main class="content" data-aos="fade-up">
+        <h1>Welcome to Sola Gratia</h1>
+        <h2>Empowering Future Generations</h2>
+      </main>
+
+      <button class="prev" onclick="prevSlide()">&#10094;</button>
+      <button class="next" onclick="nextSlide()">&#10095;</button>
+    </section>
+
+    <section class="intro" data-aos="fade-up">
+      <div class="container" data-aos="fade-up">
+        <h1>Our School History</h1>
+        <div class="line" data-aos="fade-up"></div>
+        <p>
+          Our history began with a small church in Pajangan City. Starting from
+          the rapid growth of the Christian community, thus encouraging a high
+          need to receive Christian education. Along with that, our Pastor,
+          Pastor Venerah Gabriel proposed the construction of a Christian
+          school, so that students can be educated in Christian teachings and
+          grow in knowing God. In 1990, our school began construction and was
+          completed in 1995. Until 2023 yesterday, we just finished renovating
+          the school building, so that it provides more comfort for students. It
+          is recorded that until 2025 there are 1500 students from kindergarten
+          to high school levels.
+        </p>
+      </div>
+
+      <div class="vision" data-aos="fade-up">
+        <div class="vision-image" data-aos="fade-up">
+          <img src="Images/image4.jpg" alt="Vision Image" data-aos="fade-up" />
+        </div>
+
+        <div class="vision-text" data-aos="fade-up">
+          <h1>Our Vision</h1>
+          <p>
+            To become a leading Christian school that forms a generation with
+            Christ-like character and a global outlook. Our school is committed
+            to developing the academic and spiritual potential of each student.
+            Through education centered on love and faith, we prepare students to
+            become future leaders.
+          </p>
+        </div>
+      </div>
+
+      <div class="mission-container" data-aos="fade-up">
+        <div class="mision" data-aos="fade-up">
+          <div class="mision-text" data-aos="fade-up">
+            <h1>Our Mission</h1>
+          </div>
+
+          <!-- Kotak-kotak abu-abu -->
+          <div class="mission-boxes" data-aos="fade-up">
+            <div class="mission-box" data-aos="fade-up">
+              <i data-feather="target" class="icon"></i>
+              <p>Instill faith through Christ-centered learning</p>
+            </div>
+            <div class="mission-box" data-aos="fade-up">
+              <i data-feather="book" class="icon"></i>
+              <p>Develop students' character and potential</p>
+            </div>
+            <div class="mission-box" data-aos="fade-up">
+              <i data-feather="smile" class="icon"></i>
+              <p>Create a safe, creative environment</p>
+            </div>
+            <div class="mission-box" data-aos="fade-up">
+              <i data-feather="life-buoy" class="icon"></i>
+              <p>Facilitate development of talents and interests</p>
+            </div>
+            <div class="mission-box" data-aos="fade-up">
+              <i data-feather="home" class="icon"></i>
+              <p>Foster strong collaboration with church</p>
+            </div>
+            <div class="mission-box" data-aos="fade-up">
+              <i data-feather="globe" class="icon"></i>
+              <p>Prepare faith-driven leaders for future</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="image-text-container" data-aos="fade-up">
+        <div class="image-container" data-aos="fade-up">
+          <img
+            id="carousel-image"
+            src="Images/image5.avif"
+            alt="Image 1"
+            data-aos="fade-up"
+          />
+        </div>
+        <div class="text-container" data-aos="fade-up">
+          <p id="carousel-text" data-aos="fade-up">
+            Our teachers guide students toward truth, knowledge, and growth in
+            faith. With love, they help students discover their God-given
+            potential. Our teachers create a safe, supportive, Christ-centered
+            learning environment. They build partnerships with parents to ensure
+            students grow academically and spiritually. Through their lifelong
+            role models, our teachers prepare students to be faithful leaders
+            who impact the world.
+          </p>
+        </div>
+      </div>
+
+      <div class="dots-container" data-aos="fade-up">
+        <span class="dot" onclick="changeSlide(0)"></span>
+        <span class="dot" onclick="changeSlide(1)"></span>
+        <span class="dot" onclick="changeSlide(2)"></span>
+      </div>
+    </section>
+
+    <footer>
+      <div class="socials" data-aos="fade-up">
+        <div class="socials-logo" data-aos="fade-up">
+          <a href="home.html">
+            <img src="Images/SchoolLogo.png" alt="Logo" data-aos="fade-up" />
+          </a>
+        </div>
+        <div class="divider" data-aos="fade-up"></div>
+        <div class="socials-links" data-aos="fade-up">
+          <a href="mailto:s111310520@student.nqu.edu.tw"
+            ><i data-feather="mail"></i
+          ></a>
+          <a href="https://www.instagram.com/"
+            ><i data-feather="instagram"></i
+          ></a>
+          <a href="https://www.x.com/"><i data-feather="twitter"></i></a>
+          <a href="https://www.facebook.com/"
+            ><i data-feather="facebook"></i
+          ></a>
+          <a href="tel:+976416037"><i data-feather="phone"></i></a>
+        </div>
+      </div>
+
+      <div class="credit" data-aos="fade-up">
+        <p>
+          Merpati Raya Street No 54, Empati Village, Epanias District, Pajangan
+          City, East Kalimantan, Indonesia. Tel: (021) 24652728
+        </p>
+        <p>Sola Gratia Christian School | Copyright &copy; 2025</p>
+      </div>
+    </footer>
+
+    <script>
+      feather.replace();
+    </script>
+
+    <script src="js/home.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+  </body>
+</html>

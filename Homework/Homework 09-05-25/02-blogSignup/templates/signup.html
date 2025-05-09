@@ -1,11 +1,9 @@
-{% extends "base.html" %}
-
-{% block content %}
-    <h1>Signup</h1>
-    <form action="/signup" method="post">
-    <p><input type="text" placeholder="username" name="username"></p>
-    <p><input type="password" placeholder="password" name="password"></p>
-    <p><input type="text" placeholder="email" name="email"></p>
-    <p><input type="submit" value="Signup"></p>
-    </form>
+{% extends "base.html" %} {% block content %}
+<h1>Signup</h1>
+<form action="/signup" method="post">
+  <p><input type="text" placeholder="Username" name="username" /></p>
+  <p><input type="password" placeholder="Password" name="password" /></p>
+  <p><input type="text" placeholder="Email" name="email" /></p>
+  <p><button type="submit" class="signup-btn">Signup</button></p>
+</form>
 {% endblock %}

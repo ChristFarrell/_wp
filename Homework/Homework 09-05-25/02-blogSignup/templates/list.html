@@ -26,7 +26,11 @@
       action="/post/{{ post.id }}/delete"
       style="display: inline"
     >
-      <button type="submit" onclick="return confirm('Are you sure?')">
+      <button
+        class="delete-btn"
+        type="submit"
+        onclick="return confirm('Delete your post?')"
+      >
         Delete
       </button>
     </form>
@@ -34,3 +38,4 @@
   </li>
   {% endfor %}
 </ul>
+{% endblock %}

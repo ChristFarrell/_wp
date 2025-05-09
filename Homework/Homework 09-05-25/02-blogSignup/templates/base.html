@@ -1,60 +1,133 @@
-<html>
-<head>
-    <title></title>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}My Blog{% endblock %}</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <style>
-    body {
+      /* Modern color palette */
+      :root {
+        --primary-color: #3498db;
+        --bg-color: #f9f9f9;
+        --border-color: #e0e0e0;
+        --text-color: #333;
+      }
+
+      body {
         padding: 80px;
-        font: 16px Helvetica, Arial;
-    }
+        font-family: "Segoe UI", sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        max-width: 1500px;
+        margin: 0 auto;
+      }
 
-    h1 {
-        font-size: 2em;
-    }
+      h1 {
+        font-size: 2.2em;
+        margin-bottom: 0.8em;
+        color: var(--primary-color);
+      }
 
-    h2 {
-        font-size: 1.2em;
-    }
+      h2 {
+        font-size: 1.4em;
+        margin-bottom: 0.6em;
+      }
 
-    #posts {
+      a {
+        color: var(--primary-color);
+      }
+
+      a:hover {
+        color: #2980b9;
+      }
+
+      #posts {
         margin: 0;
         padding: 0;
-    }
+        list-style-type: none;
+      }
 
-    #posts li {
+      #posts li {
         margin: 40px 0;
-        padding: 0;
+        padding: 20px;
         padding-bottom: 20px;
-        border-bottom: 1px solid #eee;
-        list-style: none;
-    }
+        border-bottom: 1px solid var(--border-color);
+        background-color: white;
+        border-radius: 10px;
+      }
 
-    #posts li:last-child {
+      #posts li:last-child {
         border-bottom: none;
-    }
+      }
 
-    textarea {
-        width: 500px;
+      textarea {
+        width: 100%;
         height: 300px;
-    }
+        max-width: 1200px;
+      }
 
-    input[type=text],input[type=password],
-    textarea {
-        border: 1px solid #eee;
-        border-top-color: #ddd;
-        border-left-color: #ddd;
-        border-radius: 2px;
+      button {
+        padding: 10px 18px;
+        font-size: 0.95em;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 8px;
+      }
+
+      /* Delete (red) */
+      button.delete-btn {
+        background-color: #c0392b;
+        color: white;
+      }
+
+      button.create-btn {
+        background-color: #2d3236;
+        color: white;
+      }
+
+      button.signup-btn {
+        background-color: #3498db;
+        color: white;
+      }
+
+      button.login-btn {
+        background-color: #3498db;
+        color: white;
+      }
+
+      input[type="text"],
+      input[type="password"],
+      textarea {
+        border: 1px solid var(--border-color);
+        border-radius: 4px;
         padding: 15px;
-        font-size: .8em;
-    }
+        font-size: 0.9em;
+        width: 100%;
+        max-width: 1100px;
+      }
 
-    input[type=text],input[type=password] {
-        width: 500px;
-    }
+      input[type="text"]:focus,
+      input[type="password"]:focus,
+      textarea:focus {
+        outline: none;
+        border-color: var(--primary-color);
+      }
+
+      #content {
+        background-color: white;
+        padding: 30px;
+        border-radius: 8px;
+      }
     </style>
-</head>
-<body>
-    <section id="content">
-    {% block content %}{% endblock %}
-    </section>
-</body>
+  </head>
+  <body>
+    <section id="content">{% block content %}{% endblock %}</section>
+  </body>
 </html>

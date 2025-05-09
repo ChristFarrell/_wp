@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sola Gratia School</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Animation -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!--Feather Icons-->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="stylesheet" href="CSS/contact.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar Start-->
+    <nav class="navbar">
+      <a href="home.html" class="navbar-logo">
+        <img src="Images/SchoolLogo.png" alt="Logo" style="height: 40px" />
+      </a>
+
+      <div class="navbar-nav">
+        <a href="home.html">Home</a>
+        <a href="ourschool.html">Our School</a>
+        <a href="alumni.html">Our Alumni</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+      <!-- Navigation Bar End-->
+    </nav>
+
+    <!--Hero section-->
+    <section class="hero" id="home" data-aos="fade-up">
+      <main class="content" data-aos="fade-up">
+        <h1>Our News and Information</h1>
+        <h2>Sola Gratia School</h2>
+      </main>
+
+      <button class="prev" onclick="prevSlide()">&#10094;</button>
+      <button class="next" onclick="nextSlide()">&#10095;</button>
+    </section>
+
+    <section class="contact" data-aos="fade-up">
+      <div class="container" data-aos="fade-up">
+        <h1>Contact Us</h1>
+        <div class="line" data-aos="fade-up"></div>
+        <p>
+          We are ready to help you get more complete information about Sola
+          Gratia School. Do not hesitate to contact us by phone, email, or come
+          directly to our administration office. Our team will be happy to
+          answer your questions and provide the guidance needed. You can also
+          follow our social media for the latest activity updates.
+        </p>
+
+        <div class="contact-boxes" data-aos="fade-up">
+          <a href="mailto:s111310520@student.nqu.edu.tw" class="contact-box">
+            <i data-feather="mail"></i>
+            <span>Email</span>
+          </a>
+          <a href="https://www.instagram.com/" class="contact-box">
+            <i data-feather="instagram"></i>
+            <span>Instagram</span>
+          </a>
+          <a href="https://www.x.com/" class="contact-box">
+            <i data-feather="twitter"></i>
+            <span>Twitter</span>
+          </a>
+          <a href="https://www.facebook.com/" class="contact-box">
+            <i data-feather="facebook"></i>
+            <span>Facebook</span>
+          </a>
+          <a href="tel:02124652728" class="contact-box">
+            <i data-feather="phone"></i>
+            <span>Telephone</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="map-form-section" data-aos="fade-up">
+        <!-- Google Map -->
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31912.012372661186!2d116.82955281530569!3d-1.1593628178627036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df14971b3c1bb21%3A0xfcb248107fccc9!2sBalikpapan%20City!5e0!3m2!1sen!2sid!4v1745886637174!5m2!1sen!2sid"
+            width="600"
+            height="450"
+          ></iframe>
+        </div>
+
+        <!-- Formulir -->
+        <form id="SchoolForm" class="contact-form" data-aos="fade-up">
+          <!-- Name Field -->
+          <div class="form-group input-wrapper" data-aos="fade-up">
+            <i data-feather="user"></i>
+            <input
+              type="text"
+              id="user"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+          </div>
+
+          <!-- Email Field -->
+          <div class="form-group input-wrapper" data-aos="fade-up">
+            <i data-feather="mail"></i>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+          </div>
+
+          <!-- Phone Field -->
+          <div class="form-group input-wrapper" data-aos="fade-up">
+            <i data-feather="phone"></i>
+            <input
+              type="tel"
+              id="telephone"
+              name="phone"
+              placeholder="Your Phone"
+              required
+            />
+          </div>
+
+          <div class="form-group" data-aos="fade-up">
+            <textarea
+              rows="4"
+              id="message"
+              name="message"
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            id="submit-btn"
+            class="submit-btn"
+            data-aos="fade-up"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="socials" data-aos="fade-up">
+        <div class="socials-logo" data-aos="fade-up">
+          <a href="home.html">
+            <img src="Images/SchoolLogo.png" alt="Logo" data-aos="fade-up" />
+          </a>
+        </div>
+        <div class="divider" data-aos="fade-up"></div>
+        <div class="socials-links" data-aos="fade-up">
+          <a href="mailto:s111310520@student.nqu.edu.tw"
+            ><i data-feather="mail"></i
+          ></a>
+          <a href="https://www.instagram.com/"
+            ><i data-feather="instagram"></i
+          ></a>
+          <a href="https://www.x.com/"><i data-feather="twitter"></i></a>
+          <a href="https://www.facebook.com/"
+            ><i data-feather="facebook"></i
+          ></a>
+          <a href="tel:02124652728"><i data-feather="phone"></i></a>
+        </div>
+      </div>
+
+      <div class="credit" data-aos="fade-up">
+        <p>
+          Merpati Raya Street No 54, Empati Village, Epanias District, Pajangan
+          City, East Kalimantan, Indonesia. Tel: (021) 24652728
+        </p>
+        <p>Sola Gratia Christian School | Copyright &copy; 2025</p>
+      </div>
+    </footer>
+
+    <script>
+      feather.replace();
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+
+    <script src="js/contact.js"></script>
+  </body>
+</html>

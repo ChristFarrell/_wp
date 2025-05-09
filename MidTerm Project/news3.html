@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sola Gratia School</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Animation -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!--Feather Icons-->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="stylesheet" href="CSS/news-inside.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar Start-->
+    <nav class="navbar">
+      <a href="home.html" class="navbar-logo">
+        <img src="Images/SchoolLogo.png" alt="Logo" style="height: 40px" />
+      </a>
+
+      <div class="navbar-nav">
+        <a href="home.html">Home</a>
+        <a href="ourschool.html">Our School</a>
+        <a href="alumni.html">Our Alumni</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+      <!-- Navigation Bar End-->
+    </nav>
+
+    <!--Hero section-->
+    <section class="hero" id="home" data-aos="fade-up">
+      <main class="content" data-aos="fade-up">
+        <h1>Our News and Information</h1>
+        <h2>Sola Gratia School</h2>
+      </main>
+
+      <button class="prev" onclick="prevSlide()">&#10094;</button>
+      <button class="next" onclick="nextSlide()">&#10095;</button>
+    </section>
+
+    <!--text-->
+    <div class="news" data-aos="fade-up">
+      <div class="news-item" data-aos="fade-up">
+        <div class="news-text" data-id="news3">
+          <!-- Title -->
+          <h1 class="news-title">
+            <a href="#" class="news-title" data-id="news3"></a>
+          </h1>
+
+          <!-- Meta Row -->
+          <div class="news-meta">
+            <span class="news-author" data-id="news3"></span>
+            <span class="post-time" data-id="news3"></span>
+          </div>
+
+          <!-- Image -->
+          <div class="news-content">
+            <img
+              class="news-image"
+              data-id="news3"
+              alt="News Image"
+              data-aos="fade-up"
+            />
+            <p class="news-paragraph">
+              Another proud achievement was achieved by Sola Gratia students in
+              the national Science Fair held in Jakarta on April 5-7, 2025. In
+              the competition which was attended by more than 80 schools from
+              all over Indonesia, the Sola Gratia team won 1st place in the
+              Science Innovation Project category and 2nd place in the
+              Scientific Poster category. The main team consisting of three
+              grade XI students presented a project entitled "Eco-Cooler:
+              Environmentally Friendly Cooler from Used Materials". This project
+              combines the principles of physics and the environment to create
+              an air conditioner without electricity, using only used plastic
+              bottles and cardboard. "I didn't expect to win at the national
+              level. Initially, we just wanted to try our simple idea," said
+              Reza, the team leader, when interviewed after the announcement of
+              the winners. The supervising teacher, Mrs. Diah, added, "These
+              children are extraordinary. They worked hard for weeks and learned
+              a lot about scientific research firsthand." In addition to
+              bringing home trophies and certificates, students also received
+              invitations to participate in advanced coaching programs from
+              partner universities. The Principal of Sola Gratia, Mrs. Maria
+              Lestari, expressed her pride and gratitude for this achievement.
+              "This achievement is proof that our students' creativity and hard
+              work can compete at the national level," she said. This
+              achievement is an inspiration for other students to continue to
+              work and not be afraid to try new things. Sola Gratia will
+              continue to support students' interests and talents in various
+              fields, including science, art, and technology.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-buttons">
+      <a href="news4.html" class="nav-button">
+        <i data-feather="arrow-left"></i> BACK
+      </a>
+      <a href="news2.html" class="nav-button">
+        NEXT <i data-feather="arrow-right"></i>
+      </a>
+    </div>
+
+    <footer>
+      <div class="socials" data-aos="fade-up">
+        <div class="socials-logo" data-aos="fade-up">
+          <a href="home.html">
+            <img src="Images/SchoolLogo.png" alt="Logo" data-aos="fade-up" />
+          </a>
+        </div>
+        <div class="divider" data-aos="fade-up"></div>
+        <div class="socials-links" data-aos="fade-up">
+          <a href="mailto:s111310520@student.nqu.edu.tw"
+            ><i data-feather="mail"></i
+          ></a>
+          <a href="https://www.instagram.com/"
+            ><i data-feather="instagram"></i
+          ></a>
+          <a href="https://www.x.com/"><i data-feather="twitter"></i></a>
+          <a href="https://www.facebook.com/"
+            ><i data-feather="facebook"></i
+          ></a>
+          <a href="tel:02124652728"><i data-feather="phone"></i></a>
+        </div>
+      </div>
+
+      <div class="credit" data-aos="fade-up">
+        <p>
+          Merpati Raya Street No 54, Empati Village, Epanias District, Pajangan
+          City, East Kalimantan, Indonesia. Tel: (021) 24652728
+        </p>
+        <p>Sola Gratia Christian School | Copyright &copy; 2025</p>
+      </div>
+    </footer>
+
+    <script>
+      feather.replace();
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+
+    <script src="js/news.js"></script>
+  </body>
+</html>

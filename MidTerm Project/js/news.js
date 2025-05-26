@@ -1,3 +1,17 @@
+const navBarNav = document.querySelector(".navbar-nav");
+
+document.querySelector("#hamburger-menu").onclick = () => {
+  navBarNav.classList.toggle("active");
+};
+
+const hamburger = document.querySelector("#hamburger-menu");
+
+document.addEventListener("click", function (e) {
+  if (!hamburger.contains(e.target) && !navBarNav.contains(e.target)) {
+    navBarNav.classList.remove("active");
+  }
+});
+
 const heroSlides = [
   {
     image: "Images/mainnews1.jpg",
@@ -100,4 +114,71 @@ document.querySelectorAll(".news-author").forEach((el) => {
   if (newsData[id]) {
     el.textContent = `By: ${newsData[id].author}`;
   }
+});
+
+const anonymousInput = document.querySelector(".anonymous-input");
+const userComment = document.querySelector(".usercomment");
+const publishBtn = document.querySelector("#publish");
+const comments = document.querySelector("#comment-list");
+
+function checkInputs() {
+  const name = anonymousInput.value.trim();
+  const comment = userComment.value.trim();
+
+  if (name !== "" && comment !== "") {
+    publishBtn.removeAttribute("disabled");
+    publishBtn.classList.add("able");
+  } else {
+    publishBtn.setAttribute("disabled", "disabled");
+    publishBtn.classList.remove("able");
+  }
+}
+
+userComment.addEventListener("input", checkInputs);
+anonymousInput.addEventListener("input", checkInputs);
+
+const UserId = {
+  name: "",
+  message: "",
+  date: "",
+};
+
+function addComment() {
+  UserId.name = anonymousInput.value;
+  UserId.message = userComment.value;
+  UserId.date = new Date().toLocaleString();
+
+  let publishedComment = `
+  <div class="parent">
+    <i data-feather="user"></i>
+    <div>
+      <h3>${UserId.name}</h3>
+      <p>${UserId.message}</p>
+      <span>${UserId.date}</span>
+    </div>
+  </div>
+`;
+
+  comments.innerHTML += publishedComment;
+  feather.replace();
+  localStorage.setItem("comments", comments.innerHTML);
+  (userComment.value = ""), (anonymousInput.value = "Anonymous");
+
+  let counts = document.querySelectorAll(".parent").length;
+  document.getElementById("comment-count").textContent = counts;
+}
+
+publishBtn.addEventListener("click", addComment);
+
+window.addEventListener("DOMContentLoaded", (e) => {
+  comments.innerHTML = localStorage.getItem("comments");
+
+  let counts = document.querySelectorAll(".parent").length;
+  document.getElementById("comment-count").textContent = counts;
+});
+
+document.getElementById("clear").addEventListener("click", () => {
+  document.getElementById("comment-input").value = "";
+  document.getElementById("name-input").value = "";
+  document.querySelector(".anonymous-input").value = "Anonymous";
 });

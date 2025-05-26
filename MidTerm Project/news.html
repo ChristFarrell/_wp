@@ -145,6 +145,42 @@
       </div>
     </div>
 
+    <section class="comments-section" data-aos="fade-up">
+      <h2>Post a Comment</h2>
+      <p class="comment-counter"><span id="comment-count">0</span> comments</p>
+
+      <div class="comment-box" data-aos="fade-up">
+        <div class="comment-user" data-aos="fade-up">
+          <i data-feather="user"></i>
+          <input type="text" value="Anonymous" class="anonymous-input" />
+          <input
+            type="text"
+            id="name-input"
+            placeholder="Enter your name"
+            style="display: none"
+          />
+        </div>
+
+        <textarea
+          id="comment-input"
+          rows="4"
+          placeholder="Enter your comment"
+          class="usercomment"
+          data-aos="fade-up"
+        ></textarea>
+
+        <hr />
+
+        <div class="button-row" data-aos="fade-up">
+          <button type="submit" disabled id="publish">Publish</button>
+          <button type="button" id="clear">Clear</button>
+        </div>
+
+        <div id="comment-list" data-aos="fade-up"></div>
+      </div>
+    </section>
+    <!-- Comment Section End -->
+
     <footer>
       <div class="socials" data-aos="fade-up">
         <div class="socials-logo" data-aos="fade-up">

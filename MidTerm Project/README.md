@@ -8,7 +8,7 @@
 
 參考資料：https://youtu.be/drkpDLy92uA?si=SefMXWXFpnoGU47V
 
-This is a midterm exam project. The project I created is a simple school website. I'm know that my capability still low, so I'm also use [Chat GPT] to help build the website. Especially in javascript, because in HTML and CSS, some part must be modified by myself. This website uses HTML, CSS, JavaScript, and one external code. Overall, this website requires HTML and CSS code to work. Javascript code is used to toggle hamburger buttons on a small screen. Javascript is also used for button code, in replacing images and text. There is a server.js that contains code for running the server using Deno.
+This is the midterm exam project. The project I created is a simple school website. I'm know that my capability still low, so I'm also use [Chat GPT] to help build the website. Especially in javascript, because in HTML and CSS, some part must be modified by myself. This website uses HTML, CSS, JavaScript, and one external code. Overall, this website requires HTML and CSS code to work. Javascript code is used to toggle hamburger buttons on a small screen. Javascript is also used for button code, in replacing images and text. There is a server.js that contains code for running the server using Deno.
 
 There is also a comment column on the page "news.html", where comment posts can be sent below the page. This comment column can only work on 1 account, so it will save the comment and record the date/time the comment was sent.
 

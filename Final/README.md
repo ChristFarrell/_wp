@@ -43,4 +43,4 @@ This homework get help by Chat GPT. Likely when some question is hard. This assi
 ## Homework 9
 
 本次作業使用了老師範例程式碼。在某些部分也得到了 ChatGPT 的幫助。最後一項任務結合 HTML、JavaScript 與 Python 程式碼。使用者可註冊帳號與密碼，資料儲存在伺服器中。登入後使用者可建立文章，且可刪除自己所創建的文章。所有使用者，不論是否登入，均可瀏覽文章。\
-This homework uses the Teacher example code. Also got help from ChatGPT in some parts. This assignment is includes HTML, JavaScript, and Python code. Users can create their own accounts and passwords, which will be stored on the server. Users who are logged in can create posts. Users can also delete posts they have created. The post will be seen by all users, whether logged in or not.
+This homework uses the Teacher example code. Also got help from ChatGPT in some parts. This assignment are includes HTML, JavaScript, and Python code. Users can create their own accounts and passwords, which will be stored on the server. Users who are logged in can create posts. Users can also delete posts they have created. The post will be seen by all users, whether logged in or not.

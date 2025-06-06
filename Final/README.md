@@ -23,7 +23,7 @@ This homework get help by Chat GPT. On number 5 modified it on (return part). Th
 ## Homework 5
 
 本次作業使用了老師範例程式碼。只需修改代碼並添加“學校”和學號”即可。此程式碼使用 Deno 與 Oak 框架建立 HTTP 伺服器。伺服器根據 URL 路徑 /name、/age、/gender、/school 及/school ID 處理請求，這些路徑皆含有既定資訊。伺服器運行於 http://127.0.0.1:8000 。\
-This homework uses the Teacher example code. Just modify it to add "School". This code uses Deno and the Oak framework to create a HTTP server. The server handles requests based on the URL paths of /name, /age, /gender, /school, and /school ID, all of which already contain information. The server is running at http://127.0.0.1:8000.
+This homework uses the Teacher example code. Just modify it to add "School" and "School ID". This code uses Deno and the Oak framework to create a HTTP server. The server handles requests based on the URL paths of /name, /age, /gender, /school, and /school ID, all of which already contain information. The server is running at http://127.0.0.1:8000.
 
 ## Homework 6
 
